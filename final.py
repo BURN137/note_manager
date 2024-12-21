@@ -12,7 +12,12 @@ title3 = input("Введите третий заголовок заметки: "
 titles = [title1, title2, title3]
 
 # Создаем список для хранения информации о заметке, даты без года
-note = [username, content, status, created_date[:5:], issue_date[:5:], titles]
+note = {"Имя пользователя: ": username,
+        "Описание заметки: ": content,
+        "Статус заметки: ": status,
+        "Дата создания заметки: ": created_date[:5:],
+        "Дата истечения заметки: ": issue_date[:5:],
+        "Заголовки заметки: ": titles}
 
 # Выводим все данные заметки списком
 print(note)
