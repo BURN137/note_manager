@@ -42,3 +42,4 @@ while True:
         break
     else:
         status_changes = input("Пожалуйста, введите 'Да' или 'Нет': ")
+print({"status": new_status})
