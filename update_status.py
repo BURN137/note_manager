@@ -5,15 +5,7 @@ print("\nВозможные статусы заметки:"
           "\nОтложено")
 status = input("Введите статус заметки: ")
 while True:
-    if status.lower() == "выполнено":
-        status = status.lower().capitalize()
-        print("\nТекущий статус заметки:", status)
-        break
-    elif status.lower() == "в процессе":
-        status = status.lower().capitalize()
-        print("\nТекущий статус заметки:", status)
-        break
-    elif status.lower() == "отложено":
+    if status.lower() in ["выполнено", "в процессе", "отложено"]:
         status = status.lower().capitalize()
         print("\nТекущий статус заметки:", status)
         break
@@ -29,15 +21,7 @@ status_changes = input("Хотите изменить статус заметк�
 while True:
     if status_changes.lower() == "да":
         new_status = input("Введите новый статус заметки: ")
-        if new_status.lower() == "выполнено":
-            new_status = new_status.lower().capitalize()
-            print("Статус заметки успешно обновлен на:", new_status)
-            break
-        elif new_status.lower() == "в процессе":
-            new_status = new_status.lower().capitalize()
-            print("Статус заметки успешно обновлен на:", new_status)
-            break
-        elif new_status.lower() == "отложено":
+        if new_status.lower() in ["выполнено", "в процессе", "отложено"]:
             new_status = new_status.lower().capitalize()
             print("Статус заметки успешно обновлен на:", new_status)
             break
